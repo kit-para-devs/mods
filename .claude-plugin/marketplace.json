@@ -1,0 +1,12 @@
+{
+  "name": "kit-para-devs",
+  "description": "Mods para Claude Code",
+  "owner": { "name": "kit-para-devs" },
+  "plugins": [
+    {
+      "name": "tablero-consumo",
+      "source": "./plugins/tablero-consumo",
+      "description": "Tablero de consumo para Claude Code con plan Pro o Max"
+    }
+  ]
+}
