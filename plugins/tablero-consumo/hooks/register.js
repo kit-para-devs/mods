@@ -170,7 +170,8 @@ export function register(on) {
     const line = (text, props = {}) => Text({ wrap: 'truncate-end', ...props, children: [text] })
     const gap = () => Text({ children: [' '] })
 
-    const sections = []
+    // Autoría, justo bajo el título del panel
+    const sections = [dim('Creado por Stephano · @iOStephano · 8pluscore.com'), gap()]
 
     // 1. Tokens
     sections.push(title('1. Tokens'))
@@ -245,10 +246,6 @@ export function register(on) {
     const startedAt = usage && usage.startedAt
     const start = typeof startedAt === 'number' ? startedAt : Date.parse(startedAt ?? '')
     sections.push(line(Number.isFinite(start) ? formatDuration(now - start) : 'Sin datos'))
-
-    // Autoría
-    sections.push(gap())
-    sections.push(dim('Creado por Stephano · @iOStephano · 8pluscore.com'))
 
     return Box({ flexDirection: 'column', width: columns, children: sections })
   })
