@@ -1,4 +1,6 @@
-# Mods para Claude Code
+# Kit #01 · Tablero de consumo para Claude Code
+
+💻 Computadora
 
 Mods gratuitos para Claude Code 2.1.287 o posterior, en la terminal o en la pestaña Code de la app de escritorio.
 
@@ -45,3 +47,8 @@ claude plugin validate ./mods/plugins/tablero-consumo
 ## Licencia
 
 MIT
+
+---
+🛠️ Kit creado por **Stephano Portella** — iOStephano
+Instagram y TikTok: **@iOStephano** · Más kits: **[8pluscore.com](https://8pluscore.com)**
+Licencia MIT · Si lo compartes, mantén este crédito.

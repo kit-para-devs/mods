@@ -92,7 +92,7 @@ export function register(on) {
       isOpen = false
       return {}
     }
-    const placed = await $.ui.open({ id: PANE, title: 'Consumo', closeOnEscape: true, columns: 44 })
+    const placed = await $.ui.open({ id: PANE, title: 'Consumo', closeOnEscape: true, columns: 52 })
     isOpen = true
     if (placed && placed.isPlaced === false) {
       $.ui.toast('El tablero espera una terminal más ancha')
@@ -245,6 +245,10 @@ export function register(on) {
     const startedAt = usage && usage.startedAt
     const start = typeof startedAt === 'number' ? startedAt : Date.parse(startedAt ?? '')
     sections.push(line(Number.isFinite(start) ? formatDuration(now - start) : 'Sin datos'))
+
+    // Autoría
+    sections.push(gap())
+    sections.push(dim('Creado por Stephano · @iOStephano · 8pluscore.com'))
 
     return Box({ flexDirection: 'column', width: columns, children: sections })
   })

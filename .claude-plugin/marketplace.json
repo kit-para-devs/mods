@@ -1,7 +1,7 @@
 {
   "name": "kit-para-devs",
   "description": "Mods para Claude Code",
-  "owner": { "name": "kit-para-devs" },
+  "owner": { "name": "Stephano Portella (iOStephano)" },
   "plugins": [
     {
       "name": "tablero-consumo",

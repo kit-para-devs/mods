@@ -1,8 +1,9 @@
 {
   "name": "tablero-consumo",
-  "version": "1.0.0",
+  "version": "1.1.0",
   "description": "Tablero de consumo para Claude Code con plan Pro o Max. Tokens por pedido, uso del plan, contexto, herramientas y tiempo de sesión.",
-  "author": { "name": "kit-para-devs" },
+  "author": { "name": "Stephano Portella (iOStephano)", "url": "https://8pluscore.com" },
+  "homepage": "https://8pluscore.com",
   "license": "MIT",
   "keywords": ["mod", "consumo", "tokens", "pro"]
 }
